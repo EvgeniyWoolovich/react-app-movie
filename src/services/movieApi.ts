@@ -61,7 +61,11 @@ const removeNotFoundPoster = async (data: FormattedMovie[]): Promise<FormattedMo
     return [...checkPreviewMovies.filter((item: FormattedMovie | null): item is FormattedMovie => item !== null)]
 }
 
-export const getData = async (url: string, apiKey: string): Promise<FormattedMovie[]> => {
+export const getData = async (url: string, apiKey?: string): Promise<FormattedMovie[]> => {
+    if (!apiKey) {
+        return []
+    }
+
     const response: Response = await fetch(url, {
         method: 'GET',
         headers: {

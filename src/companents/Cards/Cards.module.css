@@ -5,6 +5,7 @@
     justify-content: space-around;
     row-gap: 20px;
     column-gap: 20px;
+    min-height: 100vh;
 }
 
 .wrapperLoading {
@@ -14,5 +15,5 @@
     justify-content: space-around;
     row-gap: 20px;
     column-gap: 20px;
-    height: 100vh;
+    min-height: 100vh;
 }
