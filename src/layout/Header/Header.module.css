@@ -1,0 +1,26 @@
+.header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b2b0b0;
+    padding-bottom: 20px;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__listItem {
+    margin-right: 10px;
+}
+
+.header__listItem:last-child {
+    margin-right: 0;
+}
